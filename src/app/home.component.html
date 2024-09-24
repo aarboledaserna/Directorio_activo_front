@@ -1,0 +1,11 @@
+<div>
+    <h1>Bienvenido a la Aplicación Angular con MSAL</h1>
+    <button (click)="login()">Iniciar Sesión</button>
+    <button (click)="logout()">Cerrar Sesión</button>
+
+    <div *ngIf="getAccount()">
+        <h2>Usuario Conectado:</h2>
+        <pre>{{ getAccount() }}</pre>
+        <a routerLink="/profile">Ver Perfil</a>
+    </div>
+</div>
